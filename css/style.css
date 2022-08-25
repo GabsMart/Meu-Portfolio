@@ -33,6 +33,7 @@
     list-style:none;
     text-decoration: none;
     border: 0;
+    scroll-behavior: smooth;
     }
 
 /* Nav */
@@ -204,6 +205,7 @@ nav a {
     font-family: var(--Fonte-inter);
     text-align: center;
     font-size: 20px;
+    transition: 2s;
 }
 
 .prox-sessão {
