@@ -212,11 +212,57 @@ nav a {
     gap: 10px;
 }
 
+/* Sobre */
 
+#sobre {
+    background-color: var(--azul-claro);
+    display: flex;
+    gap: 30px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    width: 100vw;
+}
 
+#sobre img {
+    width: 450px;
+    height: auto;
+    padding-left: 10%;
+    border-bottom: 5px solid var(--amarelo);
+}
 
+#sobre h1 {
+    color: var(--branco);
+    font-family: var(--Fonte-DMSANS);
+    font-size: var(--tamanho-titulo);
+    text-align: left;
+    padding-bottom: 30px;
+}
 
+#sobre p {
+    color: var(--branco);
+    font-family: var(--Fonte-inter);
+    font-size: var(--tamanho-texto-maior);
+    text-align: left;
+    font-weight: 300;
+    line-height: 32px;
+    padding-bottom: 50px;
+}
 
+.sobre_mim {
+    align-items: center;
+    max-width: 850px;
+    padding-right: 10%;
+}
+
+.pulseira_botão {
+    padding: var(--tamanho-botão);
+    border-radius: var(--borda-botão);
+    background-color: var(--amarelo);
+    color: var(--preto);
+    font-family: var(--Fonte-DMSANS);
+    font-size: var(--tamanho-texto);
+    font-weight: 700;
+}
 
 
 
