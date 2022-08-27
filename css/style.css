@@ -54,6 +54,7 @@ nav {
     font-size: var(--tamanho-texto-maior);
     color: var(--amarelo);
     font-family: var(--Fonte-DMSANS);
+    cursor: default;
 }
 
 .nav_lista {
@@ -127,6 +128,7 @@ nav a {
 .profissão::before {
     content: "";
     position: absolute;
+    width: 80px;
     top: 25%;
     right: 250px;
     height: 1px;
@@ -198,11 +200,11 @@ nav a {
 
 .circulo {
     height: 30px;
+    width: 30px;
     border-radius: 100%;
     font-family: var(--Fonte-inter);
     text-align: center;
     font-size: 20px;
-    transition: 2s;
 }
 
 .prox-sessão {
