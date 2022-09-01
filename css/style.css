@@ -26,10 +26,14 @@
 
 /* Reset Css */
 
-* {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
+html,
+body,
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
     list-style:none;
     text-decoration: none;
     border: 0;
@@ -45,9 +49,13 @@ header {
 
 nav {
     padding: 20px 60px;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    background-color: var(--azul-escuro);
+    width: 100vw;
+    position: fixed;
 }
 
 .portfolio_logo {
@@ -66,12 +74,15 @@ nav {
 
 .nav_item {
     font-size: var(--tamanho-texto-maior);
-
     font-family: var(--Fonte-inter);
 }
 
 nav a {
     color: var(--cinza);
+}
+
+nav a:hover {
+    color: var(--branco);
 }
 
 .nav_botão {
@@ -93,11 +104,12 @@ nav a {
 /* Header */
 
 .principal_header {
+    padding-top: 2%;
+    height: 100vh;
     padding-left: 87px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 8%;
 }
 
 .img_header {
@@ -135,6 +147,7 @@ nav a {
     background: var(--branco);
     z-index: 0;
 }
+
 
 .principal_header p {
     font-family: var(--Fonte-inter);
@@ -186,11 +199,6 @@ nav a {
 .link_port:hover:after {
     transform: scaleX(1);
     transform-origin:0 50%;
-}
-
-.imagem_banner img {
-    max-height: 530px;
-    padding-right: 90px;
 }
 
 .pular {
@@ -298,32 +306,132 @@ nav a {
     cursor: pointer;
 }
 
+/* Habilidades */
+
+#habilidades {
+    display: flex;
+    padding: 150px 230px ;
+    background-color: var(--azul-escuro);
+}
 
 
+#habilidades .esquerda h1 {
+    color: var(--branco);
+    font-size: var(--tamanho-titulo);
+    font-family: var(--Fonte-DMSANS);
+    padding-bottom: 50px;
+    width: 50%;
+}
 
+#habilidades .esquerda p {
+    color: var(--cinza);
+    font-family: var(--Fonte-inter);
+    font-size: var(--tamanho-texto);
+    line-height: 2rem;
+    padding-bottom: 30px;
+    width: 60%;
+}
 
+.curriculo_botão {
+    padding: var(--tamanho-botão);
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    font-weight: 700;
+    border-radius: var(--borda-botão);
+    font-family: var(--Fonte-DMSANS);
+    font-size: var(--tamanho-texto);
+    transition: .7s;
+    cursor: pointer;
+}
 
+.bx-download {
+    color: var(--branco);
+    padding-left: 10px;
+}
 
+#habilidades .direita {
+    width: 50%;
+}
 
+.filtros ul {
+    display: flex;
+    gap: 140px;
+}
 
+.filtro {
+    color: var(--branco);
+    font-family: var(--Fonte-DMSANS);
+    font-size: var(--tamanho-texto-maior);
+    font-weight: 700;
+    cursor: pointer;
+    padding-bottom: 50px;
+}
 
+.habilidade {
+    color: var(--branco);
+    font-family: var(--Fonte-inter);
+    font-size: var(--tamanho-texto-maior);
+    font-weight: 700;
+}
 
+#Habilidades {
+    gap: 40px;
+    display: none;
+}
 
+.html {
+    grid-row: 1;
+    grid-column: 1;
+}
 
+.css {
+    grid-row: 1;
+    grid-column: 2;
+}
 
+.js {
+    grid-row: 1;
+    grid-column: 3;
+}
 
+#Formação {
+    gap: 40px;
+    display: grid;
+}
 
+.emedio {
+    grid-row: 1;
+    grid-column: 1;
+}
 
+.faculdade {
+    grid-row: 2;
+    grid-column: 1;
+}
 
+.eletrica {
+    grid-row: 1;
+    grid-column: 2;
+}
 
+#Formação h3 {
+    color: var(--amarelo);
+    font-family: var(--Fonte-inter);
+    font-size: var(--tamanho-texto-maior);
+    font-weight: 700;
+}
 
+#Formação h5 {
+    color: var(--cinza);
+    font-family: var(--Fonte-DMSANS);
+    font-size: var(--tamanho-texto-maior);
+}
 
-
-
-
-
-
-
+#Formação h6 {
+    color: var(--azul-claro);
+    font-family: var(--Fonte-DMSANS);
+    font-size: var(--tamanho-texto);
+}
 
 
 

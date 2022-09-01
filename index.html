@@ -6,6 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" >
 
+  <title>Meu Portfólio</title>
+
   <!-- Link para CSS -->
   <link href="./css/style.css" rel="stylesheet">
 
@@ -17,36 +19,31 @@
 
 <header class="header">
   <nav>
-    <a href="#" class="portfolio_logo">Bem vindo!</a>
+    <a href="#home" class="portfolio_logo">Bem vindo!</a>
     <ul class="nav_lista">
-      <li class="nav_item"><a href="#">Home</a></li>
+      <li class="nav_item"><a href="#home">Home</a></li>
       <li class="nav_item"><a href="#sobre">Sobre</a></li>
-      <li class="nav_item"><a href="#">Serviços</a></li>
-      <li class="nav_item"><a href="#">Portfólio</a></li>
-      <li class="nav_item"><a href="#">Blog</a></li>
-      <li class="nav_item"><a href="#">Contato</a></li>
+      <li class="nav_item"><a href="#habilidades">Habilidades</a></li>
+      <li class="nav_item"><a href="#projetos">Projetos</a></li>
+      <li class="nav_item"><a href="#contato">Contato</a></li>
     </ul>
     <a href="https://www.linkedin.com/in/gabrielgcmartins/" target="_blank" nav_linkedin"><button class="nav_botão">Meu Linkedin</button></a>
   </nav>
 
-  <section class="principal_header">
-    <div class="texto_esquerda">
+  <section class="principal_header" id="home">
+    <div class="home">
       <h1 class="nome">Gabriel G<img src="./img/hello.png" class="img_header"></h1>
       <span class="profissão">Desenvolvedor Front-End</span>
       <p>Desenvolvedor auto didáta com graduação em andamento <br>em Sistemas de Informação.</p>
 
-      <a href="#"><button class="header_botão">Contato</button></a>
-      <a href="#" class="link_port">Meus Trabalhos</a>
+      <a href="#contato"><button class="header_botão">Contato</button></a>
+      <a href="#projetos" class="link_port">Meus Trabalhos</a>
 
     <br>
 
     <div class="prox-sessão">
       <span class="pular">Ir para a próxima sessão:</span>
       <button class="circulo"><a href="#sobre">↘</a></button>
-    </div>
-    </div>
-      <div class="imagem_banner">
-        <img src="./img/boy.jpg">
     </div>
   </section>
 </header>
@@ -66,6 +63,57 @@
   </div>
 </section>
 
+<section id="habilidades">
+  <div class="esquerda">
+    <h1>O que eu sei</h1>
+    <p>Meu interesse por programação surgiu em meus cursos técnicos, porém, por ser superficial, resolvi seguir os estudos por fora. Comecei com Front-End e depois segui para Back-End. Hoje faço faculdade de Sistemas de Informação, mas isso não me impede de seguir estudando por fora!</p>
+    <a href="#"><button class="curriculo_botão">Meu Currículo<i class='bx bx-download' ></i></button></a>
+  </div>
+
+  <div class="direita">
+    <div class="filtros">
+      <ul>
+        <a><li class="filtro" id="aparecer-Formação">Formação<i class='bx bxs-chevron-down' style='color:#ffffff'  ></i></li></a>
+        <a><li class="filtro" id="aparecer-Habilidades">Habilidades<i class='bx bxs-chevron-down' style='color:#ffffff'  ></i></li></a>
+      </ul>
+
+    <div class="conteudo">
+      <div id="Habilidades">
+        <div class="habilidade html"><i class='bx bxl-html5' style='color:#ffffff' ></i><p>HTML5</p></div>
+        <div class="habilidade css"><i class='bx bxl-css3' style='color:#ffffff' ></i><p>CSS3</p></div>
+        <div class="habilidade js"><i class='bx bxl-javascript' style='color:#ffffff' ></i><p>JavaScript</p></div>
+        <div class="habilidade git"><i class='bx bx-git-branch' style='color:#ffffff' ></i><p>Git</p></div>
+        <div class="habilidade github"><i class='bx bxl-github' style='color:#ffffff' ></i><p>GitHub</p></div>
+      </div>
+
+      <div id="Formação">
+        <div class="eMedio">
+          <h3>Ensino Médio</h3>
+          <h5>Manoel Izidio</h5>
+          <h6>2019</h6>
+        </div>
+        <div class="faculdade">
+          <h3>Sistemas de Informação</h3>
+          <h5>Pitágoras</h5>
+          <h6>Em andamento  </h6>
+        </div>
+        <div class="eletrica">
+          <h3>Técnico em Eletrotécnica</h3>
+          <h5>Senai</h5>
+          <h6>Fev/2020 - Dez/2021</h6>
+        </div>
+        <div class="automação">
+          <h3>Técnico em Automação</h3>
+          <h5>Senai</h5>
+          <h6>Set/2020 - Ago/2022</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</section>
 
 
 
@@ -77,9 +125,8 @@
 
 
 
-
-
-
+<section id="projetos"></section>
+<section id="contato"></section>
 
 
 
