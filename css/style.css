@@ -377,6 +377,7 @@ nav a:hover {
 #Habilidades {
     gap: 40px;
     display: none;
+    animation: fadeIn .5s;
 }
 
 .html {
@@ -397,6 +398,7 @@ nav a:hover {
 #Formação {
     gap: 40px;
     display: grid;
+    animation: fadeIn .5s;
 }
 
 .emedio {
@@ -433,7 +435,17 @@ nav a:hover {
     font-size: var(--tamanho-texto);
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(5%);
+    }
 
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
 
 
 
