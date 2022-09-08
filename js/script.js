@@ -1,3 +1,16 @@
+// Fazer a barra de navegação diminuir
+let navbar = document.getElementById('navbar');
+
+window.onscroll = function scrollFunction () {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        navbar.style.padding = "10px 60px";
+        navbar.style.transition = ".2s";
+
+    } else {
+        navbar.style.padding = "20px 60px";
+    }
+};
+
 // Fazer o vídeo da pulseira aparecer na aba #Sobre
 let botãoPulseira = document.getElementById('aparecer-video');
 let videoYT = document.getElementById('video-yt')

@@ -18,8 +18,8 @@
 <body>
 
 <header class="header">
-  <nav>
-    <a href="#home" class="portfolio_logo">Bem vindo!</a>
+  <nav id="navbar">
+    <a href="#home" class="portfolio_logo" id="logo">Bem vindo!</a>
     <ul class="nav_lista">
       <li class="nav_item"><a href="#home">Home</a></li>
       <li class="nav_item"><a href="#sobre">Sobre</a></li>
@@ -34,8 +34,7 @@
     <div class="home">
       <h1 class="nome">Gabriel G<img src="./img/hello.png" class="img_header"></h1>
       <span class="profissão">Desenvolvedor Front-End</span>
-      <p>Desenvolvedor auto didáta com graduação em andamento <br>em Sistemas de Informação.</p>
-
+      <p>Desenvolvedor auto didata com graduação em andamento <br>em Sistemas de Informação.</p>
       <a href="#contato"><button class="header_botão">Contato</button></a>
       <a href="#projetos" class="link_port">Meus Trabalhos</a>
 
@@ -55,7 +54,8 @@
     <p>Meu interesse na área começou no projeto final do meu curso técnico em elétrica. Eu e meu grupo <span style="color: #ffc448; font-weight: 700;">desenvolvemos uma pulseira para deficientes auditivos,</span> que vibraria se o nome do usuário fosse chamado. <br>
       Eu não entendia nada sobre programação, mas resolvi aprender na marra para entregar o projeto. <br>
       E no fim deu certo! Consegui um prêmio de melhor projeto e uma vocação pra vida :D</p>
-    <button class="pulseira_botão" id="aparecer-video">Clique aqui para ver mais sobre a pulseira!</a></button>
+    <button class="pulseira_botão" id="aparecer-video">Clique aqui para ver mais sobre a pulseira!</button>
+    
     <div id="video-yt">
       <span id="fechar-video">&times;</span>
       <iframe width="853" height="480" src="https://www.youtube.com/embed/VEpF0n9gDc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -67,7 +67,7 @@
   <div class="esquerda">
     <h1>O que eu sei</h1>
     <p>Meu interesse por programação surgiu em meus cursos técnicos, porém, por ser superficial, resolvi seguir os estudos por fora. Comecei com Front-End e depois segui para Back-End. Hoje faço faculdade de Sistemas de Informação, mas isso não me impede de seguir estudando por fora!</p>
-    <a href="#"><button class="curriculo_botão">Meu Currículo<i class='bx bx-download' ></i></button></a>
+    <a href="./pdf/Gabriel Gonçalves - Currículo.pdf" download="Gabriel_G_Curriculo" target="_blank"><button class="curriculo_botão">Meu Currículo<i class='bx bx-download' ></i></button></a>
   </div>
 
   <div class="direita">
@@ -111,8 +111,52 @@
       </div>
     </div>
   </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <h1>Meus Projetos recentes</h1>
+  <div class="slider">
+    <div class="slides">
+
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+
+      <div class="slide primeiroSlide"><a href="https://gabsmart.github.io/Fotomatic" target="_blank">
+        <img src="./img/Fotomatic.png" alt="fotomatic">
+        <p>HTML e CSS</p>
+        <h3>Fotomatic</h3>
+      </a></div>
+
+      <div class="slide"><a href="https://gabsmart.github.io/Gerador-de-Frases" target="_blank">
+        <img src="./img/Dark.jpg" alt="Dark">
+        <p>JavaScript</p>
+        <h3>Gerador de Frases</h3>
+      </a></div>
+
+
+
+      <div class="navegação-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+      </div>
+    
+    </div>
+
+    <div class="navegação-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+
+    </div>
 
   </div>
+
+
+
+
+
+
+
 
 </section>
 
@@ -126,8 +170,40 @@
 
 
 
-<section id="projetos"></section>
-<section id="contato"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="contato">
+  <div class="cima">
+    <div class="texto">
+      <h1>Vamos trabalhar juntos!</h1>
+      <p>Procuro por um estágio onde posso desenvolver minhas habilidades.</p>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5531989082610&text=Ol%C3%A1%2C%20vi%20o%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA."><button>Mande uma mensagem   <i class='bx bxl-whatsapp' style='color:#ffffff'  ></i></button></a>
+    <button>GitHub</button>
+  </div>
+
+  <div class="baixo">
+    <div class="celular">
+      <h3>Celular:</p>
+      <p><a href="https://api.whatsapp.com/send?phone=5531989082610&text=Ol%C3%A1%2C%20vi%20o%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA.">(31) 98908-2610</a></p>
+    </div>
+    <div class="email">
+      <h3>Email:</p>
+      <p>GabrielMartins014@Hotmail.com</p>
+    </div>
+  </div>
+
+</section>
 
 
 
@@ -167,6 +243,6 @@
 
   <!-- Link para JavaScript -->
   <script src="./js/script.js"></script>
-  
+
 </body>
 </html>

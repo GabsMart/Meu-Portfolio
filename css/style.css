@@ -19,7 +19,7 @@
     /* Tamanhos */
     --tamanho-texto: 16px;
     --tamanho-texto-maior: 20px;
-    --tamanho-titulo: 65px;
+    --tamanho-titulo: 50px;
     --tamanho-botão: 15px 30px 16px;
     --borda-botão: 18px;
 }
@@ -226,15 +226,15 @@ nav a:hover {
 #sobre {
     background-color: var(--azul-claro);
     display: flex;
+    justify-content: space-around;
     gap: 30px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 100px 130px ;
+
 }
 
 #sobre img {
     width: 450px;
     height: auto;
-    padding-left: 10%;
     border-bottom: 5px solid var(--amarelo);
 }
 
@@ -259,7 +259,6 @@ nav a:hover {
 .sobre_mim {
     align-items: center;
     max-width: 850px;
-    padding-right: 10%;
 }
 
 .pulseira_botão {
@@ -447,10 +446,189 @@ nav a:hover {
     }
 }
 
+/* Projetos */
+#projetos {
+    height: 100vh;
+    background-color: var(--amarelo);
+    padding: 150px 230px ;
+}
+
+#projetos h1 {
+    color: var(--preto);
+    font-family: var(--Fonte-DMSANS);
+    font-size: var(--tamanho-titulo);
+    width: 50%;
+
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    margin: 0px;
+}
+
+#projetos h1::after {
+    content: "";
+    position: absolute;
+    width: 22%;
+    top: 83%;
+    right: 35%;
+    height: 5px;
+    background: var(--preto);
+    z-index: 0;
+}
+
+.slider {
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: .7s;
+    height: 355px;
+    width: 330px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide p {
+    color: var(--preto);
+    font-family: var(--Fonte-inter);
+    font-size: var(--tamanho-texto);
+    padding-top: 25px;
+}
+
+.slide h3 {
+    color: var(--preto);
+    font-family: var(--Fonte-inter);
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+/* Nevegação manual */
+
+.navegação-manual {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.manual-btn {
+    border: 2px solid var(--preto);
+    padding: 5px;
+    margin-top: 130px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+#radio1:checked ~ .primeiroSlide {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .primeiroSlide {
+    margin-left: -20%;
+}
+
+.slides {
+    display: flex;
+    gap: 35px;
+}
 
 
+
+
+
+
+
+
+
+
+
+/* Contato */
+#contato {
+    background-color: var(--preto);    
+    gap: 30px;
+    padding: 150px 230px;
+}
+
+
+.cima, .baixo {
+    display: flex;
+    gap: 40px;
+}
+
+.cima .texto h1 {
+    color: var(--branco);
+    font-family: var(--Fonte-DMSANS);
+    font-size: var(--tamanho-titulo);
+}
+
+.cima .texto p {
+    color: var(--branco);
+    font-family: var(--Fonte-inter);
+    font-size: var(--tamanho-texto);
+}
+
+.cima button {
+    padding: var(--tamanho-botão);
+    height: fit-content;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    font-weight: 700;
+    border-radius: var(--borda-botão);
+    font-family: var(--Fonte-DMSANS);
+    font-size: var(--tamanho-texto);
+    cursor: pointer;
+    align-self: center;
+}
+
+.cima a {
+    align-self: center;
+}
+
+.baixo {
+    padding-top: 80px;
+}
+
+.celular h3, .email h3 {
+    color: var(--cinza);
+    font-size: var(--tamanho-texto);
+    font-family: var(--Fonte-inter);
+}
+
+.celular p a, .email p {
+    color: var(--branco);
+    font-size: var(--tamanho-texto-maior);
+    font-family: var(--Fonte-inter);
+}
+
+
+
+
+
+
+/* Para dispositivos mobile */
 @media (max-width: 768px) {
     #video-yt iframe {
         width: 95%;
+    }
+
+    .portfolio_logo {
+        display: none;
     }
 }
